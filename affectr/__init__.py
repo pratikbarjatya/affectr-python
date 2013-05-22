@@ -37,6 +37,5 @@ def set_details(username=None, password=None):
         raise ValueError("password is required")
 
     global client
-    client = Client(app_id, app_secret, access_token=access_token,
-                    merchant_id=merchant_id)
+    client = Client(username, password)
 
