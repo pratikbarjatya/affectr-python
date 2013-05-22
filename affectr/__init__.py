@@ -16,8 +16,7 @@ from .client import Client
 
 #import as clientlib so that we don't shadow with the client variable
 import client as clientlib
-from affectr.resources import (Bill, Subscription, PreAuthorization, User,
-                                  Merchant)
+from affectr.resources import (Sentiment, Speculation, Intent, Risk, PosTag)
 
 client = None
 """The client to use. Does not exist until
