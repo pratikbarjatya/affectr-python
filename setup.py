@@ -31,7 +31,7 @@ setup(
     author='TheySay',
     author_email='info@theysay.io',
     url='http://theysay.io',
-    license='MIT',
+    license='Apache',
     include_package_data=True,
     description=DESCRIPTION,
     long_description=LONG_DESCRIPTION,
