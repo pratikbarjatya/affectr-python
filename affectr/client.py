@@ -119,7 +119,7 @@ class Client(object):
 
 
 class SentimentBias(object):
-    def __init__(self, positive, negative, neutral):
+    def __init__(self, positive=None, negative=None, neutral=None):
         self.positive = positive
         self.negative = negative
         self.neutral = neutral
