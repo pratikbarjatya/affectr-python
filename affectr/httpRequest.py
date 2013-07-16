@@ -2,7 +2,7 @@ import affectr
 import json
 import requests
 
-class Request(object):
+class HttpRequest(object):
 
     def __init__(self, method, url):
         self._method = method

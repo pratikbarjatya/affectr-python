@@ -1,4 +1,3 @@
-
 """TheySay Affectr Python Client Library
 
 This module provides a wrapper around the TheySay Affectr API, the
@@ -16,7 +15,6 @@ from .client import Client
 
 #import as clientlib so that we don't shadow with the client variable
 import client as clientlib
-from affectr.resources import (Sentiment, Speculation, Intent, Risk, PosTag)
 
 client = None
 """The client to use. Does not exist until
@@ -30,11 +28,10 @@ def set_details(username=None, password=None):
     The parameters are your security details which can be found
     on your TheySay developer details page. All are mandatory.
     """
-    if ysername is None:
+    if username is None:
         raise ValueError("username is required")
     if password is None:
         raise ValueError("password is required")
 
     global client
     client = Client(username, password)
-
