@@ -74,8 +74,7 @@ class Client(object):
         response = request.perform()
 
         if type(response) == dict and "error" in response.keys():
-            raise ClientError("Received error response calling the API, message was {0}".format(
-                response["error"]))
+            raise ClientError("Received error response calling the API, message was {0}".format(response["error"]))
         return response
 
     def classify_sentiment(self, text, bias=None):
