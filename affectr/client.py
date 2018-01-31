@@ -14,7 +14,7 @@ class Client(object):
     This class is the starting point for interacting with TheySay Affectr.
     """
 
-    base_url = 'http://api.theysay.io'
+    base_url = 'https://api.theysay.io'
 
     def __init__(self, username, password):
         """Create a client
